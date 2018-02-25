@@ -28,12 +28,11 @@
 
   <body id="page-top">
       <script>
-          var mapOptions = {
-              center: new naver.maps.LatLng(37.3595704, 127.105399),
-              zoom: 10
-          };
-          
-          var map = new naver.maps.Map('map', mapOptions);
+        var mapDiv = document.getElementById('map'); // 'map' 으로 선언해도 동일
+
+        //옵션 없이 지도 객체를 생성하면 서울시청을 중심으로 하는 11레벨의 지도가 생성됩니다.
+        var map = new naver.maps.Map(mapDiv);
+         
           </script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
