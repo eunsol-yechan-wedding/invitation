@@ -254,11 +254,20 @@
         var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
 
         var mapOptions = {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            center: new naver.maps.LatLng(126.7566533, 37.5041435),
             zoom: 10
         };
 
-        var map1 = new naver.maps.Map('map1', mapOptions);
+        var map1 = new naver.maps.Map('map1', {
+            center: new naver.maps.LatLng(126.7566533, 1126.7566533),
+            zoom: 10
+        });
+
+        var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(126.7566533, 1126.7566533),
+            map: map
+        });
+        
           </script>
 
   </body>
